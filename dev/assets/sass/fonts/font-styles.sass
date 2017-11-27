@@ -1,0 +1,101 @@
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, p, dl, dt, dd
+	margin: 0
+	padding: 0
+
+html
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+body 
+	font-family: $nunitosans-regular
+	color: $default
+	background-color: $black
+	+font-size(16, no, 24)
+	+min-break($tablet)
+		+font-size(14, no, 20)
+
+h1, h2, h3, h4
+	font-family: $nunitosans-light
+
+h1
+	+font-size(24, 0, 28)
+	text-align: center
+	letter-spacing: 1px
+	text-transform: uppercase
+	span
+		display: block
+		white-space: nowrap
+	b
+		font-size: 28px
+		font-family: $nunitosans-black
+	+min-break($tablet)
+		+font-size(40, 0, 40)
+		b
+			+font-size(42, 0, 40)
+h2
+	+font-size(18, 0, 28)
+	+min-break($tablet)
+		+font-size(18, 0, 28)
+h3
+	+font-size(18, 20, 25)
+	+min-break($tablet)
+		+font-size(26, 28, 34)
+h4
+	+font-size(18, 15, 26)
+
+p
+	// inherit body font properties
+	margin-bottom: $space-desktop
+
+// lists
+ul, ol
+	list-style: none
+	margin-bottom: $space-desktop
+	//li
+		// inherit body font properties
+		//margin-bottom: 10px
+blockquote
+	+clearfix
+	margin-bottom: $space-desktop
+	p
+		+font-size(16, 0, 24)
+		// quotes
+		position: relative
+		// &:before,
+		// &:after
+		// 	display: inline-block
+		// 	font-family: "Avenir", Helvetica, Arial, sans
+		// 	font-weight: bold
+		// 	//font-size: 125%	
+		// &:before
+		// 	content: "\201C"
+		// 	margin-right: 2px
+		// &:after
+		// 	content: "\201D"
+		// 	margin-left: 2px
+	cite
+		float: right
+		display: block
+		margin-right: $space / 2
+		font-style: italic
+	// large
+	&.lrg
+		p
+			font-family: $nunitosans-black
+			+font-size(32, 10, 32)
+			+min-break($desktop)
+				white-space: nowrap
+			+min-break($desktop-large)
+				+font-size(43, 10, 45)
+
+// Links
+a
+	text-decoration: none
+	color: $default
+	&:hover
+		outline: none
+		text-decoration: underline
+	&:visited
+		color: inherit 
+
+

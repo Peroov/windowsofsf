@@ -1,0 +1,17 @@
+dev/assets/css/*
+
+dist/*
+!dist/assets/
+dist/assets/*
+!dist/assets/js/
+!dist/assets/img/
+!dist/assets/fonts/
+!dist/assets/svg/
+!dist/assets/videos/
+
+*.DS_Store
+.DS_Store
+Web.config
+*.sass-cache
+node_modules
+npm-debug.log

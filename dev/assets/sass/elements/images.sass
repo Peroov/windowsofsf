@@ -1,0 +1,34 @@
+// use extend to add placeholder to any image holder
+%placeholder
+	background: $grey url(../img/placeholder.png) no-repeat center
+
+figure
+	margin: 0
+	padding: 0
+
+// class used with jquery library - responsiveImages()
+.responsive
+	max-width: 100%
+	height: auto
+	display: block
+	margin: 0 auto
+
+// Swap inline to background images
+// class used with jquery library - swapImgSource()
+.bg
+	display: block
+	width: 100%
+	height: auto
+	+min-break($smart)
+		display: none
+		.no-js &
+			display: block
+			
+// Full screen backgrounds
+// injected with jquery swapImgSource()
+.cover
+	+min-break($smart)
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+

@@ -1,0 +1,36 @@
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden // fixes overflow scroll on mobile
+
+body
+	min-height: 100%
+	overflow: hidden
+
+// V-align content
+%tbl
+	width: 100%
+	height: 100%
+	display: table
+	*:first-child
+		display: table-cell
+		vertical-align: middle
+
+// Display
+.hidden
+	@extend %hidden
+
+.skip-to-content
+	display: none
+	&:focus
+		display: block
+
+// For resticting long lines of text to 1 line with ...
+%truncate
+	overflow: hidden
+	text-overflow: ellipsis
+	white-space: nowrap
+
+%break-long-lines
+	overflow-wrap: break-word
+	word-wrap: break-word

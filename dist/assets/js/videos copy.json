@@ -1,0 +1,604 @@
+{
+	"items" : [
+		{
+			"poster": "assets/videos/001.jpg",
+			"source" : "assets/videos/001.mp4",
+			"lat" : "37.778567",
+			"lng": "-122.513965"
+		},
+		{
+			"poster": "assets/videos/002.jpg",
+			"source" : "assets/videos/002.mp4",
+			"lat" : "37.7641518",
+			"lng": "-122.4205703"
+		},
+		{
+			"poster": "assets/videos/003.jpg",
+			"source" : "assets/videos/003.mp4",
+			"lat" : "37.776452",
+			"lng": "-122.418079"
+		},
+		{
+			"poster": "assets/videos/004.jpg",
+			"source" : "assets/videos/004.mp4",
+			"lat" : "37.771141",
+			"lng": "-122.4337282"
+		},
+		{
+			"poster": "assets/videos/005.jpg",
+			"source" : "assets/videos/005.mp4",
+			"lat" : "37.795539",
+			"lng": "-122.393413"
+		},
+		{
+			"poster": "assets/videos/006.jpg",
+			"source" : "assets/videos/006.mp4",
+			"lat" : "37.796786",
+			"lng": "-122.406644"
+		},
+		{
+			"poster": "assets/videos/007.jpg",
+			"source" : "assets/videos/007.mp4",
+			"lat" : "37.785183",
+			"lng": "-122.419194"
+		},
+		{
+			"poster": "assets/videos/008.jpg",
+			"source" : "assets/videos/008.mp4",
+			"lat" : "37.792233",
+			"lng": "-122.4330569"
+		},
+		{
+			"poster": "assets/videos/009.jpg",
+			"source" : "assets/videos/009.mp4",
+			"lat" : "37.784819",
+			"lng": "-122.4074405"
+		},
+		{
+			"poster": "assets/videos/010.jpg",
+			"source" : "assets/videos/010.mp4",
+			"lat" : "37.777134",
+			"lng": "-122.416252"
+		},
+		{
+			"poster": "assets/videos/011.jpg",
+			"source" : "assets/videos/011.mp4",
+			"lat" : "37.785798",
+			"lng": "-122.4022595"
+		},
+		{
+			"poster": "assets/videos/012.jpg",
+			"source" : "assets/videos/012.mp4",
+			"lat" : "37.783103",
+			"lng": "-122.409656"
+		},
+		{
+			"poster": "assets/videos/013.jpg",
+			"source" : "assets/videos/013.mp4",
+			"lat" : "37.783935",
+			"lng": "-122.403023"
+		},
+		{
+			"poster": "assets/videos/014.jpg",
+			"source" : "assets/videos/014.mp4",
+			"lat" : "37.783282",
+			"lng": "-122.407533"
+		},
+		{
+			"poster": "assets/videos/015.jpg",
+			"source" : "assets/videos/015.mp4",
+			"lat" : "37.771469",
+			"lng": "-122.468676"
+		},
+		{
+			"poster": "assets/videos/016.jpg",
+			"source" : "assets/videos/016.mp4",
+			"lat" : "37.790228",
+			"lng": "-122.405282"
+		},
+		{
+			"poster": "assets/videos/017.jpg",
+			"source" : "assets/videos/017.mp4",
+			"lat" : "37.77346",
+			"lng": "-122.433761"
+		},
+		{
+			"poster": "assets/videos/018.jpg",
+			"source" : "assets/videos/018.mp4",
+			"lat" : "37.800256",
+			"lng": "-122.409829"
+		},
+		{
+			"poster": "assets/videos/019.jpg",
+			"source" : "assets/videos/019.mp4",
+			"lat" : "37.79275",
+			"lng": "-122.40619"
+		},
+		{
+			"poster": "assets/videos/020.jpg",
+			"source" : "assets/videos/020.mp4",
+			"lat" : "37.771485",
+			"lng": "-122.436878"
+		},
+		{
+			"poster": "assets/videos/021.jpg",
+			"source" : "assets/videos/021.mp4",
+			"lat" : "37.777048",
+			"lng": "-122.422912"
+		},
+		{
+			"poster": "assets/videos/022.jpg",
+			"source" : "assets/videos/022.mp4",
+			"lat" : "37.778504",
+			"lng": "-122.4030564"
+		},
+		{
+			"poster": "assets/videos/023.jpg",
+			"source" : "assets/videos/023.mp4",
+			"lat" : "37.772067",
+			"lng": "-122.431782"
+		},
+		{
+			"poster": "assets/videos/024.jpg",
+			"source" : "assets/videos/024.mp4",
+			"lat" : "37.7558595",
+			"lng": "-122.3609869"
+		},
+		{
+			"poster": "assets/videos/025.jpg",
+			"source" : "assets/videos/025.mp4",
+			"lat" : "37.807769",
+			"lng": "-122.420901"
+		},
+		{
+			"poster": "assets/videos/026.jpg",
+			"source" : "assets/videos/026.mp4",
+			"lat" : "37.780558",
+			"lng": "-122.413064"
+		},
+		{
+			"poster": "assets/videos/027.jpg",
+			"source" : "assets/videos/027.mp4",
+			"lat" : "37.772463",
+			"lng": "-122.422984"
+		},
+		{
+			"poster": "assets/videos/028.jpg",
+			"source" : "assets/videos/028.mp4",
+			"lat" : "37.769449",
+			"lng": "-122.452604"
+		},
+		{
+			"poster": "assets/videos/029.jpg",
+			"source" : "assets/videos/029.mp4",
+			"lat" : "37.759878",
+			"lng": "-122.419015"
+		},
+		{
+			"poster": "assets/videos/030.jpg",
+			"source" : "assets/videos/030.mp4",
+			"lat" : "37.797607",
+			"lng": "-122.40656"
+		},
+		{
+			"poster": "assets/videos/031.jpg",
+			"source" : "assets/videos/031.mp4",
+			"lat" : "37.766613",
+			"lng": "-122.429115"
+		},
+		{
+			"poster": "assets/videos/032.jpg",
+			"source" : "assets/videos/032.mp4",
+			"lat" : "37.771371",
+			"lng": "-122.4237"
+		},
+		{
+			"poster": "assets/videos/033.jpg",
+			"source" : "assets/videos/033.mp4",
+			"lat" : "37.764034",
+			"lng": "-122.422121"
+		},
+		{
+			"poster": "assets/videos/034.jpg",
+			"source" : "assets/videos/034.mp4",
+			"lat" : "37.782688",
+			"lng": "-122.398343"
+		},
+		{
+			"poster": "assets/videos/035.jpg",
+			"source" : "assets/videos/035.mp4",
+			"lat" : "37.790228",
+			"lng": "-122.405282"
+		},
+		{
+			"poster": "assets/videos/036.jpg",
+			"source" : "assets/videos/036.mp4",
+			"lat" : "37.78152",
+			"lng": "-122.420681"
+		},
+		{
+			"poster": "assets/videos/037.jpg",
+			"source" : "assets/videos/037.mp4",
+			"lat" : "37.801139",
+			"lng": "-122.462814"
+		},
+		{
+			"poster": "assets/videos/038.jpg",
+			"source" : "assets/videos/038.mp4",
+			"lat" : "37.782688",
+			"lng": "-122.398343"
+		},
+		{
+			"poster": "assets/videos/039.jpg",
+			"source" : "assets/videos/039.mp4",
+			"lat" : "37.8006274",
+			"lng": "-122.3990086"
+		},
+		{
+			"poster": "assets/videos/040.jpg",
+			"source" : "assets/videos/040.mp4",
+			"lat" : "37.766765",
+			"lng": "-122.404217"
+		},
+		{
+			"poster": "assets/videos/041.jpg",
+			"source" : "assets/videos/041.mp4",
+			"lat" : "37.787176",
+			"lng": "-122.407398"
+		},
+		{
+			"poster": "assets/videos/042.jpg",
+			"source" : "assets/videos/042.mp4",
+			"lat" : "37.771096",
+			"lng": "-122.432097"
+		},
+		{
+			"poster": "assets/videos/043.jpg",
+			"source" : "assets/videos/043.mp4",
+			"lat" : "37.782672",
+			"lng": "-122.410198"
+		},
+		{
+			"poster": "assets/videos/044.jpg",
+			"source" : "assets/videos/044.mp4",
+			"lat" : "37.807539",
+			"lng": "-122.475204"
+		},
+		{
+			"poster": "assets/videos/045.jpg",
+			"source" : "assets/videos/045.mp4",
+			"lat" : "37.762349",
+			"lng": "-122.434746"
+		},
+		{
+			"poster": "assets/videos/046.jpg",
+			"source" : "assets/videos/046.mp4",
+			"lat" : "37.766412",
+			"lng": "-122.467139"
+		},
+		{
+			"poster": "assets/videos/047.jpg",
+			"source" : "assets/videos/047.mp4",
+			"lat" : "37.806448",
+			"lng": "-122.423523"
+		},
+		{
+			"poster": "assets/videos/048.jpg",
+			"source" : "assets/videos/048.mp4",
+			"lat" : "37.771405",
+			"lng": "-122.4228"
+		},
+		{
+			"poster": "assets/videos/049.jpg",
+			"source" : "assets/videos/049.mp4",
+			"lat" : "37.784878",
+			"lng": "-122.408965"
+		},
+		{
+			"poster": "assets/videos/050.jpg",
+			"source" : "assets/videos/050.mp4",
+			"lat" : "37.809341",
+			"lng": "-122.416061"
+		},
+		{
+			"poster": "assets/videos/051.jpg",
+			"source" : "assets/videos/051.mp4",
+			"lat" : "37.771469",
+			"lng": "-122.468676"
+		},
+		{
+			"poster": "assets/videos/052.jpg",
+			"source" : "assets/videos/052.mp4",
+			"lat" : "37.778567",
+			"lng": "-122.513965"
+		},
+		{
+			"poster": "assets/videos/053.jpg",
+			"source" : "assets/videos/053.mp4",
+			"lat" : "37.765036",
+			"lng": "-122.422256"
+		},
+		{
+			"poster": "assets/videos/054.jpg",
+			"source" : "assets/videos/054.mp4",
+			"lat" : "37.784445",
+			"lng": "-122.404952"
+		},
+		{
+			"poster": "assets/videos/055.jpg",
+			"source" : "assets/videos/055.mp4",
+			"lat" : "37.794953",
+			"lng": "-122.39273"
+		},
+		{
+			"poster": "assets/videos/056.jpg",
+			"source" : "assets/videos/056.mp4",
+			"lat" : "37.771885",
+			"lng": "-122.430584"
+		},
+		{
+			"poster": "assets/videos/057.jpg",
+			"source" : "assets/videos/057.mp4",
+			"lat" : "37.783455",
+			"lng": "-122.432947"
+		},
+		{
+			"poster": "assets/videos/058.jpg",
+			"source" : "assets/videos/058.mp4",
+			"lat" : "37.776452",
+			"lng": "-122.418079"
+		},
+		{
+			"poster": "assets/videos/059.jpg",
+			"source" : "assets/videos/059.mp4",
+			"lat" : "37.79539",
+			"lng": "-122.396271"
+		},
+		{
+			"poster": "assets/videos/060.jpg",
+			"source" : "assets/videos/060.mp4",
+			"lat" : "37.771469",
+			"lng": "-122.468676"
+		},
+		{
+			"poster": "assets/videos/061.jpg",
+			"source" : "assets/videos/061.mp4",
+			"lat" : "37.79927",
+			"lng": "-122.407525"
+		},
+		{
+			"poster": "assets/videos/062.jpg",
+			"source" : "assets/videos/062.mp4",
+			"lat" : "37.803946",
+			"lng": "-122.448556"
+		},
+		{
+			"poster": "assets/videos/063.jpg",
+			"source" : "assets/videos/063.mp4",
+			"lat" : "37.787788",
+			"lng": "-122.403627"
+		},
+		{
+			"poster": "assets/videos/064.jpg",
+			"source" : "assets/videos/064.mp4",
+			"lat" : "37.765473",
+			"lng": "-122.386534"
+		},
+		{
+			"poster": "assets/videos/065.jpg",
+			"source" : "assets/videos/065.mp4",
+			"lat" : "37.797792",
+			"lng": "-122.407396"
+		},
+		{
+			"poster": "assets/videos/066.jpg",
+			"source" : "assets/videos/066.mp4",
+			"lat" : "37.809479",
+			"lng": "-122.409904"
+		},
+		{
+			"poster": "assets/videos/067.jpg",
+			"source" : "assets/videos/067.mp4",
+			"lat" : "37.762316",
+			"lng": "-122.466425"
+		},
+		{
+			"poster": "assets/videos/068.jpg",
+			"source" : "assets/videos/068.mp4",
+			"lat" : "37.785205",
+			"lng": "-122.431588"
+		},
+		{
+			"poster": "assets/videos/069.jpg",
+			"source" : "assets/videos/069.mp4",
+			"lat" : "37.766412",
+			"lng": "-122.467139"
+		},
+		{
+			"poster": "assets/videos/070.jpg",
+			"source" : "assets/videos/070.mp4",
+			"lat" : "37.772511",
+			"lng": "-122.416605"
+		},
+		{
+			"poster": "assets/videos/071.jpg",
+			"source" : "assets/videos/071.mp4",
+			"lat" : "37.786249",
+			"lng": "-122.433121"
+		},
+		{
+			"poster": "assets/videos/072.jpg",
+			"source" : "assets/videos/072.mp4",
+			"lat" : "37.809479",
+			"lng": "-122.409904"
+		},
+		{
+			"poster": "assets/videos/073.jpg",
+			"source" : "assets/videos/073.mp4",
+			"lat" : "37.785358",
+			"lng": "-122.40405"
+		},
+		{
+			"poster": "assets/videos/074.jpg",
+			"source" : "assets/videos/074.mp4",
+			"lat" : "37.772589",
+			"lng": "-122.401322"
+		},
+		{
+			"poster": "assets/videos/075.jpg",
+			"source" : "assets/videos/075.mp4",
+			"lat" : "37.764084",
+			"lng": "-122.38719"
+		},
+		{
+			"poster": "assets/videos/076.jpg",
+			"source" : "assets/videos/076.mp4",
+			"lat" : "37.778175",
+			"lng": "-122.390725"
+		},
+		{
+			"poster": "assets/videos/077.jpg",
+			"source" : "assets/videos/077.mp4",
+			"lat" : "37.75767",
+			"lng": "-122.390087"
+		},
+		{
+			"poster": "assets/videos/078.jpg",
+			"source" : "assets/videos/078.mp4",
+			"lat" : "37.783072",
+			"lng": "-122.406639"
+		},
+		{
+			"poster": "assets/videos/079.jpg",
+			"source" : "assets/videos/079.mp4",
+			"lat" : "37.774001",
+			"lng": "-122.424294"
+		},
+		{
+			"poster": "assets/videos/080.jpg",
+			"source" : "assets/videos/080.mp4",
+			"lat" : "37.782688",
+			"lng": "-122.398343"
+		},
+		{
+			"poster": "assets/videos/081.jpg",
+			"source" : "assets/videos/081.mp4",
+			"lat" : "37.779807",
+			"lng": "-122.511553"
+		},
+		{
+			"poster": "assets/videos/082.jpg",
+			"source" : "assets/videos/082.mp4",
+			"lat" : "37.765124",
+			"lng": "-122.399912"
+		},
+		{
+			"poster": "assets/videos/083.jpg",
+			"source" : "assets/videos/083.mp4",
+			"lat" : "37.784131",
+			"lng": "-122.408771"
+		},
+		{
+			"poster": "assets/videos/084.jpg",
+			"source" : "assets/videos/084.mp4",
+			"lat" : "37.771334",
+			"lng": "-122.435134"
+		},
+		{
+			"poster": "assets/videos/085.jpg",
+			"source" : "assets/videos/085.mp4",
+			"lat" : "37.76241",
+			"lng": "-122.434747"
+		},
+		{
+			"poster": "assets/videos/086.jpg",
+			"source" : "assets/videos/086.mp4",
+			"lat" : "37.777311",
+			"lng": "-122.417244"
+		},
+		{
+			"poster": "assets/videos/087.jpg",
+			"source" : "assets/videos/087.mp4",
+			"lat" : "37.808975",
+			"lng": "-122.412359"
+		},
+		{
+			"poster": "assets/videos/088.jpg",
+			"source" : "assets/videos/088.mp4",
+			"lat" : "37.764842",
+			"lng": "-122.431867"
+		},
+		{
+			"poster": "assets/videos/089.jpg",
+			"source" : "assets/videos/089.mp4",
+			"lat" : "37.797484",
+			"lng": "-122.406508"
+		},
+		{
+			"poster": "assets/videos/090.jpg",
+			"source" : "assets/videos/090.mp4",
+			"lat" : "37.805876",
+			"lng": "-122.42295"
+		},
+		{
+			"poster": "assets/videos/091.jpg",
+			"source" : "assets/videos/091.mp4",
+			"lat" : "37.783375",
+			"lng": "-122.402013"
+		},
+		{
+			"poster": "assets/videos/092.jpg",
+			"source" : "assets/videos/092.mp4",
+			"lat" : "37.769034",
+			"lng": "-122.453182"
+		},
+		{
+			"poster": "assets/videos/093.jpg",
+			"source" : "assets/videos/093.mp4",
+			"lat" : "37.787752",
+			"lng": "-122.418188"
+		},
+		{
+			"poster": "assets/videos/094.jpg",
+			"source" : "assets/videos/094.mp4",
+			"lat" : "37.800843",
+			"lng": "-122.39863"
+		},
+		{
+			"poster": "assets/videos/095.jpg",
+			"source" : "assets/videos/095.mp4",
+			"lat" : "37.797636",
+			"lng": "-122.406604"
+		},
+		{
+			"poster": "assets/videos/096.jpg",
+			"source" : "assets/videos/096.mp4",
+			"lat" : "37.776066",
+			"lng": "-122.419853"
+		},
+		{
+			"poster": "assets/videos/097.jpg",
+			"source" : "assets/videos/097.mp4",
+			"lat" : "37.783935",
+			"lng": "-122.403023"
+		},
+		{
+			"poster": "assets/videos/098.jpg",
+			"source" : "assets/videos/098.mp4",
+			"lat" : "37.790657",
+			"lng": "-122.403866"
+		},
+		{
+			"poster": "assets/videos/099.jpg",
+			"source" : "assets/videos/099.mp4",
+			"lat" : "37.777116",
+			"lng": "-122.394987"
+		},
+		{
+			"poster": "assets/videos/100.jpg",
+			"source" : "assets/videos/100.mp4",
+			"lat" : "37.775759",
+			"lng": "-122.438271"
+		}
+	]
+}

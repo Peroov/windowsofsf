@@ -1,0 +1,31 @@
+%button
+	position: relative
+	display: block
+	text-indent: -9999em
+	border: none
+	border-radius: 0 // reset for mobile
+	background-color: transparent
+	cursor: pointer
+	// &:hover,
+	// &:visited
+	// with icon
+	&:focus
+		outline: 0
+	i
+	&.full 
+		width: 100%
+	// seperate btns after one another
+	& + .btn 
+	// Forms buttons that are disabled
+	&:disabled
+		pointer-events: none
+	// with svg
+	svg
+		position: absolute
+		top: 0
+		left: 0
+		fill: white
+
+button,
+.btn
+	@extend %button

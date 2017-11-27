@@ -1,0 +1,318 @@
+%hidden
+  display: none !important
+  visibility: hidden
+
+%visuallyhidden
+  border: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+  //Extends the .visuallyhidden class to allow the element to be focusable
+  //when navigated to via the keyboard: h5bp.com/p
+  &.focusable:active, &.focusable:focus
+    clip: auto
+    height: auto
+    margin: 0
+    overflow: visible
+    position: static
+    width: auto
+
+//Hide visually and from screenreaders, but maintain layout
+%invisible
+  visibility: hidden
+
+//from html5bp
+=clearfix
+  &:before, &:after
+    content: " "
+    //1
+    display: table
+    //2
+  &:after
+    clear: both
+  *zoom: 1
+  //For IE 6/7 only. Include this rule to trigger hasLayout and contain floats.
+
+=justify
+  text-align: justify
+  &:after
+    content: ""
+    display: inline-block
+    width: 100%
+
+@function sprite-w($sprite)
+  @return nth($sprite, 3)
+
+@function sprite-h($sprite)
+  @return nth($sprite, 4)
+
+=ir
+  background-color: transparent
+  border: 0
+  overflow: hidden
+  text-indent: -9999px
+  // IE 6/7 fallback
+  &:before
+    content: ""
+    display: block
+    width: 0
+    height: 150%
+
+
+=spritebox($sprite, $sprite-folder-name: sprite, $text-indent: -5000px, $display: block)
+  +sprite($sprite)
+  background-image: url('/assets/img/#{$sprite-folder-name}.png')
+  text-indent: $text-indent
+  display: $display
+
+  @media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)
+    background-image: url('/assets/img/#{$sprite-folder-name}.png')
+    background-size: image-width("#{$sprite-folder-name}.png") image-height("#{$sprite-folder-name}.png")
+
+
+=imagebox($image-path, $display: block)
+  background: image-url($image-path)
+  background-position: 0 0
+  background-size: 100%
+  display: $display
+  width: image-width($image-path)
+  height: image-height($image-path)
+  text-indent: -5000px
+  overflow: hidden
+
+
+=retina-background($img-name, $bg-position: 0% 0%, $bg-color: transparent)
+  background: $bg-color image-url("#{$img-name}.png") no-repeat $bg-position
+  +background-size(image-width("#{$img-name}.png") image-height("#{$img-name}.png"))
+  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx)
+    background: $bg-color image-url("retina-icons/#{$img-name}@2x.png") no-repeat $bg-position
+    +background-size(image-width("#{$img-name}.png") image-height("#{$img-name}.png"))
+  @media only screen and (min--moz-device-pixel-ratio: 2.3), only screen and (-o-min-device-pixel-ratio: 4.6 / 2), only screen and (-webkit-min-device-pixel-ratio: 2.3), only screen and (min-device-pixel-ratio: 2.3), (min-resolution: 2.3dppx)
+    background: $bg-color image-url("retina-icons/#{$img-name}@3x.png") no-repeat $bg-position
+    +background-size(image-width("#{$img-name}.png") image-height("#{$img-name}.png"))
+
+=all_fonts($fonts)
+  @each $font in $fonts
+    @font-face
+      font-family: #{$font}
+      src: url("../fonts/#{$font}/#{$font}-webfont.eot")
+      src: url("../fonts/#{$font}/#{$font}-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/#{$font}/#{$font}-webfont.woff") format("woff"), url("../fonts/#{$font}/#{$font}-webfont.ttf") format("truetype"), url("../fonts/#{$font}/#{$font}-webfont.svg") format("svg")
+      font-weight: normal
+      font-style: normal
+      -webkit-font-smoothing: antialiased
+
+    @media screen and (-webkit-min-device-pixel-ratio: 0)
+      font-family: #{$font}
+      src: url("../fonts/#{$font}/#{$font}-webfont.svg") format("svg")
+
+/////////////////////////////////////////////////////////////////////////////
+///////////////////// MEDIA QUERY / MEDIA DISTINCTION ///////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+
+=breakpoint($point, $extreme: max, $dimension: width)
+  @if $media-queries
+    @media only screen and (#{$extreme}-#{$dimension}: $point)
+      @content
+
+=min-break($point, $dimension: width)
+  +breakpoint($point, $extreme: min, $dimension: width)
+    @content
+
+=min-max-break($min, $max, $dimension: width)
+  @if $media-queries
+    @media only screen and (min-#{$dimension}: $min) and (max-#{$dimension}: $max)
+      @content
+
+=min-width-and-height($width, $height)
+  @if $media-queries
+    @media only screen and (min-width: $width) and (min-height: $height)
+      @content
+
+=smart-break
+  @if $media-queries
+    @media only screen and (min-device-width: $smart) and (min-device-height: 480px)
+      @content
+
+=retina-above($resolution: 1.3)
+  @if $media-queries
+    @media only screen and (min--moz-device-pixel-ratio: #{$resolution}), only screen and (-o-min-device-pixel-ratio: #{$resolution * 2}/2), only screen and (-webkit-min-device-pixel-ratio: #{$resolution}), only screen and (min-device-pixel-ratio: #{$resolution}), (min-resolution: #{$resolution}dppx)
+      @content
+
+=orientation($orientation: portrait, $media: screen)
+  @if $media-queries
+    @media #{$media} and (orientation: $orientation)
+      @content
+
+=portrait
+  +orientation
+    @content
+
+=landscape
+  +orientation(landscape)
+    @content
+
+=appearance($appearance: none)
+  appearance: $appearance
+  -webkit-appearance: $appearance
+  -moz-appearance: $appearance
+
+
+=responsive-video-container($margin-bottom: 0)
+  position: relative
+  padding-bottom: 56.25%
+  // padding-top: 30px
+  margin-bottom: $margin-bottom
+  overflow: hidden
+  z-index: 1
+  iframe, object, embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+=desktop-hover($break: 1024px)
+  .no-touch &:hover
+    //+breakpoint(1024px, $extreme : min)
+    @content
+
+// Vertical aligh
+=ghostVerticalAlign
+  overflow: hidden
+  &:before
+    content: ''
+    display: inline-block
+    vertical-align: middle
+    min-height: inherit
+    height: 100%
+    width: .1px
+    margin-left: -10px
+
+// Vertical align
+=vertical-align
+  top: 50%
+  transform: translateY(-50%)
+
+// Absolute align
+=absolute-align
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+=disable-user-select
+  -webkit-touch-callout: none
+  user-select: none
+
+=calc($prop, $val)
+  @each $pre in -webkit-, -moz-
+    #{$prop}: $pre + calc(#{$val})
+  #{$prop}: calc(#{$val})
+
+  // Font sizing
+$doc-font-size: 16 !default
+$doc-line-height: 24 !default
+
+// the magic mixin for font size
+=font-size($size, $margin: yes, $line-height: $doc-line-height)
+  // generates the font-size in REMs with a PX fallback
+  font-size: $size + px
+  //font-size: $size / $doc-font-size + rem
+  // line-height functions
+  // if you a line-height is specified in the mixin
+  //@if $line-height != $doc-line-height and $line-height != 1
+    //line-height: ceil($size / $line-height) * $line-height / $size
+  @if $line-height == 1
+    line-height: 1
+  @else
+    //line-height: ceil($size / $doc-line-height) * $doc-line-height / $size
+    line-height: $line-height + px
+  // margin-bottom functions
+  // if no is bottom margin is required
+  @if $margin == no
+    margin-bottom: 0
+  @else if $margin != yes and $margin != no
+    margin-bottom: 0px + $margin
+    //margin-bottom: 0rem + $margin / $doc-font-size
+  @else
+    margin-bottom: 0px + $doc-line-height
+    //margin-bottom: 0rem + $doc-line-height / $doc-font-size
+
+// =font-sizes($size, $line-height: 1)
+//   font-size: $size + px
+//   font-size: $size / $doc-font-size + rem
+=fsz($size, $line-height: 1)
+  font-size: $size + px
+  font-size: $size / $doc-font-size + rem
+  line-height: $line-height
+
+
+// Arrows
+=arrow_helper($arrowSize, $arrowColor, $margin, $side, $align)
+  @if $side == "top"
+    border-bottom-color: $arrowColor
+    top: -2 * $arrowSize
+  @if $side == "bottom"
+    border-top-color: $arrowColor
+    bottom: -2 * $arrowSize
+  @if $side == "left"
+    border-right-color: $arrowColor
+    left: -2 * $arrowSize
+  @if $side == "right"
+    border-left-color: $arrowColor
+    right: -2 * $arrowSize
+  @if $side == "right" or $side == "left"
+    @if $align == "center"
+      top: 50%
+      margin-top: -$arrowSize
+    @else if $align == "top"
+      top: $margin
+    @else if $align == "bottom"
+      bottom: $margin
+  @if $side == "bottom" or $side == "top"
+    @if $align == "center"
+      right: 50%
+      margin-right: -$arrowSize
+    @else if $align == "left"
+      left: $margin + 20
+    @else if $align == "right"
+      right: $margin + 20
+
+=arrow($side: "right", $align: "center", $size: 20px, $color: #fff, $borderColor: "none", $borderSize: 1px)
+  $selector: "&:after, &:before"
+  @if $borderColor == "none"
+    $selector: "&:after"
+  #{$selector}
+    border: solid transparent
+    content: ""
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+    z-index: 20
+    //visibility: visible;
+  &:after
+    border-width: $size
+    +arrow_helper($size, $color, $size, $side, $align)
+  @if $borderColor != "none"
+    &:before
+      border-width: $borderSize + $size
+      +arrow_helper($size + $borderSize, $borderColor, $size - $borderSize, $side, $align)
+
+=stretch($dimension : all)
+  position: absolute
+  @if $dimension == 'width'
+    left: 0
+    right: 0
+  @else if $dimension == 'height'
+    top: 0
+    bottom: 0
+  @else
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0

@@ -1,0 +1,222 @@
+// 
+// 	Core Owl Carousel CSS File
+//	v1.3.3
+
+// clearfix
+
+.owl-carousel
+	height: 100%
+	.owl-wrapper
+		height: 100%
+		&:after
+			content: "."
+			display: block
+			clear: both
+			visibility: hidden
+			line-height: 0
+			height: 0
+		display: none
+		position: relative
+		transform: translate3d(0px, 0px, 0px)
+	display: none
+	position: relative
+	width: 100%
+	-ms-touch-action: pan-y
+	.owl-wrapper-outer
+		overflow: hidden
+		position: relative
+		width: 100%
+		height: 100%
+		&.autoHeight
+			transition: height 500ms ease-in-out
+	.owl-item
+		position: relative
+		float: left
+		height: 100%
+		z-index: 1
+		overflow: hidden
+		// z-index	
+		// @for $i from 0 through 99
+		// 	&:nth-child(#{$i + 1})
+		// 		z-index: #{100 - $i}
+
+// display none until init
+
+.owl-controls
+	position: absolute
+	bottom: 0
+	width: 100%
+	.owl-page,
+	.owl-buttons div
+		cursor: pointer
+		user-select: none
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+// mouse grab icon
+
+.grabbing
+	cursor: url(grabbing.png) 8 8, move
+
+// fix
+
+.owl-carousel
+	.owl-wrapper, .owl-item
+		backface-visibility: hidden
+		transform: translate3d(0, 0, 0)
+ 
+// theme
+
+.owl-theme .owl-controls
+	text-align: center
+	.owl-buttons div
+		color: #FFF
+		display: inline-block
+		zoom: 1
+		*display: inline
+		//IE7 life-saver
+		margin: 5px
+		padding: 3px 10px
+		font-size: 12px
+		border-radius: 30px
+		background: #869791
+		opacity: 0.5
+	&.clickable .owl-buttons div:hover
+		opacity: 1
+		text-decoration: none
+	.owl-pagination
+		height: 2px
+		background-color: black
+	.owl-page
+		float: left
+		display: inline-block
+		width: 1%
+		height: 2px
+		span
+			display: block
+			width: 0 //100%
+			height: 100%
+			margin: 0
+			background-color: white
+			transition: width .35s
+			&.played
+				width: 100%
+		&.active span
+			opacity: 1
+	&.clickable .owl-page:hover
+		opacity: .5
+	.owl-page span.owl-numbers
+		height: auto
+		width: auto
+		color: #FFF
+		padding: 2px 10px
+		font-size: 12px
+		border-radius: 30px
+
+// Styling Next and Prev buttons
+
+// Clickable class fix problem with hover on touch devices
+// Use it for non-touch hover action
+
+// Styling Pagination
+
+// If PaginationNumbers is true
+
+// preloading images
+
+.owl-item.loading
+	min-height: 150px
+	background: url(AjaxLoader.gif) no-repeat center center
+
+// Owl Carousel CSS3 Transitions 
+.owl-origin
+	perspective-origin-x: 50%
+	perspective-origin-y: 50%
+	perspective: 1200px
+	backface-visibility: hidden
+
+// fade
+
+.owl-fade-out
+	z-index: 10
+	animation: fadeOut .7s both ease
+
+.owl-fade-in
+	animation: fadeIn .7s both ease
+
+// goDown
+
+.owl-goDown-out
+	animation: goDownTo .45s ease both
+
+.owl-goDown-in
+	animation: goDownFrom .55s ease both
+
+.owl-goDown-out.reverse
+	animation: goDownToRev .45s ease both
+
+.owl-goDown-in.reverse
+	animation: goDownFromRev .55s ease both
+
+// Keyframes
+//empty
+@keyframes empty
+	0%
+		opacity: 1
+
+@keyframes fadeIn
+	0%
+		opacity: 0
+
+	100%
+		opacity: 1
+
+@keyframes fadeOut
+	0%
+		opacity: 1
+
+	100%
+		opacity: 0
+
+@keyframes goDownFrom
+	from
+		transform: scale(.95)
+		z-index: 0
+		//opacity: .5
+	to
+		transform: scale(1)
+		z-index: 1
+		//opacity: 1
+
+@keyframes goDownTo
+	from
+		transform: scale(1)
+		z-index: 1
+	to
+		transform: scale(1.15)
+		z-index: 2
+		//opacity: .5
+
+// reverse animation
+@keyframes goDownFromRev
+	from
+		transform: scale(1.25)
+		z-index: 2
+	to
+		transform: scale(1)
+		z-index: 1
+
+@keyframes goDownToRev
+	from
+		transform: scale(1)
+		z-index: 1
+	to
+		transform: scale(.9)
+		//opacity: .5
+		z-index: 0
+
+@keyframes reveal
+	0%
+		width: 0
+
+	100%
+		width: 100%

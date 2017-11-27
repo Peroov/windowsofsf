@@ -1,0 +1,6 @@
+// 	z-index: z("modal")
+$z-layers: ("overlay": 1000, "header": 10, "footer": 10, "section": 5, "ui": 9, "default": 1, "below": -1, "bottomless-pit": -9000)
+@function z($layer)
+	@if not map-has-key($z-layers, $layer)
+		@warn "No layer found for `#{$layer}` in $z-layers map. Property omitted."
+	@return map-get($z-layers, $layer)

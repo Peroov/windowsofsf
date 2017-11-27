@@ -1,0 +1,119 @@
+{{> header}}
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- content -->
+<div class="container">
+	<div class="main">
+
+		<!-- shared close button for all overlays -->
+		<div class="close">
+			<button title="close" class="btnClose">Close</button>
+		</div>
+
+		<!-- Pagination -->
+		<div class="title">
+			<h2><b class="num">1</b> <span>100</span></h2>
+		</div>
+
+		<section class="ui">
+
+			<nav role="global">
+				<ul>
+					<li class="map"><button title="View on Map">map
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.6 31.2"><path d="M20 24.2c-3.4-3.9-8-9.5-8-14.9a9.3 9.3 0 1 1 18.6 0c0 5.4-4.7 11-8 14.9a1.9 1.9 0 0 1-1.2.6h-.1a1.9 1.9 0 0 1-1.3-.6zm1.4-9.3A5.6 5.6 0 0 0 27 9.3a5.5 5.5 0 0 0-5.7-5.7 5.4 5.4 0 0 0-5.6 5.7 5.5 5.5 0 0 0 5.7 5.6zM33 20.4h-5.2a80.8 80.8 0 0 1-5.2 6.8 2.1 2.1 0 0 1-1.3.7 2.1 2.1 0 0 1-1.3-.7c-1.7-1.9-3.4-4.4-5.2-6.8H9.3L0 31.2h42.6z"></svg>
+					</button></li>
+					<li class="info"><button title="Info">info
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.9 30.9"><path d="M15.5 0a15.5 15.5 0 1 0 15.4 15.5A15.5 15.5 0 0 0 15.5 0zM17 24.5a.6.6 0 0 1-.6.6h-1.9a.6.6 0 0 1-.6-.6V13.1a.6.6 0 0 1 .6-.6h1.9a.6.6 0 0 1 .6.6zm.1-16.3l-.4.5-.6.4h-.7a1.7 1.7 0 0 1-1.2-.5 1.6 1.6 0 0 1-.5-1.2 1.6 1.6 0 0 1 .1-.6l.4-.5.6-.4h1.4l.6.4.4.5a1.6 1.6 0 0 1 0 1.3z"/></svg>
+					</button></li>
+					<li class="volume"><button title="Mute">Mute
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.1 28.5"><path d="M17.1 2.3a2.3 2.3 0 0 0-.7-1.6l-.7-.5a2.3 2.3 0 0 0-2.5.5L5.7 8.1H2.3A2.3 2.3 0 0 0 0 10.5v7.6a2.3 2.3 0 0 0 2.3 2.3h3.4l7.5 7.5a2.3 2.3 0 0 0 3.9-1.6zM5.7 18.8H2.3a.8.8 0 0 1-.8-.8v-7.5a.8.8 0 0 1 .8-.8h3.4v9.2zm9.4 8.1a.8.8 0 0 1-.8-.2l-.2-.2V1.9l.2-.2a.8.8 0 0 1 .8-.2l.2.2a.8.8 0 0 1 .2.5v24a.8.8 0 0 1-.4.7z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.9 17"><path d="M.2 2.9a.6.6 0 0 1 .8 0 7.9 7.9 0 0 1 0 11.2.6.6 0 0 1-.8-.8 6.8 6.8 0 0 0 0-9.6.6.6 0 0 1 0-.8zM3.3.2a.8.8 0 0 1 1.1 0 11.7 11.7 0 0 1 0 16.5.8.8 0 0 1-1.2-1.2 10 10 0 0 0 0-14.1.8.8 0 0 1 .1-1.2z"/></svg>
+					</button></li>
+					<li class="play"><button title="Play">Play
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 24">
+							<polyline points="0 0 16 12 0 24"/>
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path d="M8,24H0V0H8ZM24,0H16V24h8Z"/>
+						</svg>
+					</button></li>
+					<li class="prev"><button title="Previous">Previous</button></li>
+					<li class="next"><button title="Next">Next</button></li>
+				</ul>
+				
+			</nav>
+
+		</section>
+		
+		<section class="windows">
+
+			<div id="owl-json" class="owl-carousel"></div>
+
+		</section>
+
+		<!-- map -->
+		<section class="maps">
+			<!-- Google map -->
+			<div id="map" class="gmap"></div>
+
+		</section>
+
+		<!-- about, info & credits -->
+		<section class="about">
+
+			<div class="copy">
+
+				<blockquote class="lrg">
+					<p><b>My favorite journey is looking out the window.</b></p>
+					<cite>- Edward Gorey</cite>
+				</blockquote>
+
+				<blockquote>
+					<p>Looking out the window is an underrated activity. Each one is like a never-ending movie about a small, specific place in the world. You never know what kind of characters you’ll see, or what kind of plots will unfold. I tried to capture this feeling with Windows of San Francisco, which features views from 100 different windows around the city.  San Francisco is a magical place, enjoy the journey.</p>
+				</blockquote>
+
+				<ul class="share">
+					<li><a id="ogBtn" class="btn">Share on Facebook
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.6 15.6"><path d="M1.9 3.4v2.2H0v2.7h1.9v7.3h2.8V8.3h2.8V5.6H4.7V3.8c0-.7.2-1.2 1.1-1.2h1.7V.1H5.7C3.1 0 1.9 1.6 1.9 3.4z"></svg></a></li>
+					<li><a class="btn twitter-share-button" target="_blank" href="https://twitter.com/intent/tweet?text=Explore%20San%20Francisco%20by%20looking%20out%20of%20100%20windows%20around%20the%20city.%20Windowsofsf.com"
+  data-size="large">Tweet
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.2 9.9"><path d="M6 3.1A7.1 7.1 0 0 1 .9.5a2.5 2.5 0 0 0 .8 3.3L.5 3.5a2.5 2.5 0 0 0 2 2.4H1.4a2.5 2.5 0 0 0 2.3 1.8A5.1 5.1 0 0 1 .6 8.8H0a7.1 7.1 0 0 0 3.8 1.1A7.1 7.1 0 0 0 11 2.8v-.3a5.1 5.1 0 0 0 1.3-1.3l-1.4.4a2.5 2.5 0 0 0 1-1.4 5.1 5.1 0 0 1-1.6.6A2.5 2.5 0 0 0 6 2.5a2.5 2.5 0 0 0 0 .6z"></svg></a></li>
+				</ul>
+			</div>
+
+			<div class="foot">
+				<nav>
+					<a href="mailto:murraycommajon(at)gmail(dot)com(exc)subject(eq)Inquiries" title="Inquiries">Inquiries</a>
+					<a href="mailto:murraycommajon(at)gmail(dot)com(exc)subject(eq)Praise" title="Praise">Praise</a>
+					<a href="mailto:murraycommajon(at)gmail(dot)com(exc)subject(eq)Scorn" title="Scorn">Scorn</a>
+				</nav>
+
+				<ul class="credits">
+					<b>Made by:</b>
+					<li>Jon Murray,</li>
+					<li>Matthew Pullen,</li>
+					<li>Andrew Pullen</li>
+					<li>&amp; Pete Blaszkiewicz</li>
+				</ul>
+			</div>
+
+		</section>
+
+		<!-- overlay -->
+		<section class="overlay">
+			<div class="loader">
+				<!-- svg logo -->
+				<ul class="favicon">
+					<!-- window frames -->
+					<li></li>
+					<li></li>
+				</ul>
+				<p>Loading...</p>
+			</div>
+		</section>
+
+	</div>
+</div>
+
+{{> footer}}

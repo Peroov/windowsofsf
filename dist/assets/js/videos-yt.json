@@ -1,0 +1,64 @@
+{
+	"items" : [
+		{
+			"vidid": "1",
+			"source" : "l0KeXXxTDls",
+			"lat" : "37.778567",
+			"lng": "-122.513965"
+		},
+		{
+			"vidid": "2",
+			"source" : "0y3YWkUDR2o",
+			"lat" : "37.772115",
+			"lng": "-122.431104"
+		},
+		{
+			"vidid": "3",
+			"source" : "-vgOsOqVtjg",
+			"lat" : "37.776452",
+			"lng": "-122.418079"
+		},
+		{
+			"vidid": "4",
+			"source" : "pKol_ERTYes",
+			"lat" : "37.771141",
+			"lng": "-122.4337282"
+		},
+		{
+			"vidid": "5",
+			"source" : "dhtUjaca8Fk",
+			"lat" : "37.795539",
+			"lng": "-122.393413"
+		},
+		{
+			"vidid": "6",
+			"source" : "3663aZWorY4",
+			"lat" : "37.796786",
+			"lng": "-122.406644"
+		},
+		{
+			"vidid": "7",
+			"source" : "9VUjCYL1NOU",
+			"lat" : "37.785183",
+			"lng": "-122.419194"
+		},
+		{
+			"vidid": "8",
+			"source" : "i2vqXGZi6x0",
+			"lat" : "37.785234",
+			"lng": "-122.429314"
+		},
+		{
+			"vidid": "9",
+			"source" : "JSiak0N3QbA",
+			"lat" : "37.784819",
+			"lng": "-122.4074405"
+		},
+		{
+			"vidid": "10",
+			"source" : "K7OF14u8aIg",
+			"lat" : "37.780202",
+			"lng": "-122.412492"
+		}
+	]
+}

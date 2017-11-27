@@ -1,0 +1,37 @@
+
+%label 
+	color: $default
+%input 
+	color: $default
+
+input[type="text"],
+button,
+select,
+textarea
+	-webkit-appearance: none
+
+label 
+	@extend %label
+
+input[type="text"],
+textarea,
+select
+	@extend %input
+
+input[type="checkbox"],
+input[type="radio"],
+	opacity: 0
+	+ label
+		&:before
+			// fancy checkbox styles	
+	// checked state
+	&:checked + label
+		&:before
+	// focus
+	&:hover + label,
+	&:focus + label
+		&:before
+			// fancy checkbox styles
+
+input[type="submit"]
+	@extend %button

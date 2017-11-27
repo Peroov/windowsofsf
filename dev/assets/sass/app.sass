@@ -1,0 +1,38 @@
+$media-queries : true
+$custom-fonts  : true
+$spritesheets  : true
+
+// resets
+@import reset/normalize
+
+// libraries
+@import libraries/library
+
+// presets
+@import base/variables
+@import base/mixins
+
+// sprites
+// @import _sprites/sprite
+
+// fonts
+@import fonts/font-face
+@import fonts/font-styles
+
+// base
+@import base/global
+@import base/grid
+
+// elements - for snippets that are used inside the layouts, cannot exist on their own
+@import elements/images
+@import elements/buttons
+@import elements/video
+
+// modules - for snippets that exist on their own and part of the page layout
+@import modules/main
+@import modules/header
+@import modules/footer
+
+// vendor
+// For all 3rd party plugins
+@import vendors/owl-carousel
