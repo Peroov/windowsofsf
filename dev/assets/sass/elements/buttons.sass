@@ -11,6 +11,12 @@
 	// with icon
 	&:focus
 		outline: 0
+	&:hover
+		> svg
+			&:first-of-type 
+				opacity: 0
+			&:last-of-type
+				opacity: 1
 	i
 	&.full 
 		width: 100%
@@ -25,6 +31,12 @@
 		top: 0
 		left: 0
 		fill: white
+		transition: opacity .35s ease-out
+	> svg
+		&:first-of-type 
+			opacity: 1
+		&:last-of-type
+			opacity: 0
 
 button,
 .btn

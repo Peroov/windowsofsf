@@ -1,10 +1,13 @@
-header
+header,
+.instructions
 	position: absolute
 	width: auto
 	+absolute-align
 	pointer-events: none
 	opacity: 0
 	z-index: z("header")
+
+header
 	h1
 		display: block
 		// span
@@ -24,6 +27,24 @@ header
 				&:last-child
 					transform: translateX(0px)
 
+.instructions
+	text-align: center
+	hr + p 
+		text-transform: uppercase 
+		+font-size(12, no, 12)
+		margin-bottom: $space-desktop / 1.5
+	svg 
+		width: 30px
+		fill: white
+		margin: 0 5px
+		&:last-of-type 
+			transform: rotateZ(180deg)
+	.loaded &,
+	[class*='view-'] &
+		animation: fadeInOut 5s linear 4.3s forwards
+		svg 
+			animation: pushOut .2s linear 5.5s forwards 
+
 @keyframes fadeInOut
 	0%
 		opacity: 0
@@ -33,3 +54,9 @@ header
 		opacity: 1
 	100%
 		opacity: 0
+
+@keyframes pushOut
+	0%
+		margin: 0 5px
+	100%
+		margin: 0 10px

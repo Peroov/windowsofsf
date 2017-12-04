@@ -163,21 +163,23 @@ section
 			&.volume
 				bottom: $space
 				left: $space
-				svg
+				svg, i
 					height: 20px
 					transition: opacity .65s, left .35s ease
-					&:first-child
-						left: 35%
-					&:last-child
-						left: 70%
+				svg 
+					left: 35%
+				i
+					position: absolute
+					left: 70%
+					svg 
+						opacity: 1
 				// add mute state
 				&.mute
 					svg
-						&:first-child
-							left: 45%
-						&:last-child
-							left: 85%
-							opacity: 0
+						left: 45%
+					i
+						left: 85%
+						opacity: 0
 			// play for mobile
 			&.play
 				display: block
