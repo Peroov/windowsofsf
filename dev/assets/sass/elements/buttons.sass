@@ -15,7 +15,8 @@
 		> svg
 			&:first-of-type 
 				opacity: 0
-			&:last-of-type
+			&:last-of-type,
+			&:only-of-type
 				opacity: 1
 	i
 	&.full 
@@ -33,10 +34,11 @@
 		fill: white
 		transition: opacity .35s ease-out
 	> svg
-		&:first-of-type 
-			opacity: 1
 		&:last-of-type
 			opacity: 0
+		&:first-of-type,
+		&:only-of-type
+			opacity: 1
 
 button,
 .btn
